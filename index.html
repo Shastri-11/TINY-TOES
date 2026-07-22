@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Kitty Wonderland</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-decor"></div>
+    
+    <nav class="glass-nav">
+        <div class="logo">
+            <span class="heart">♥</span> Hello Kitty
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+        <button class="btn-primary" id="greetBtn">Say Hello!</button>
+    </nav>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <span class="badge">Welcome to the Magic</span>
+                <h1>Discover the World of <br> <span class="highlight">Hello Kitty</span></h1>
+                <p>Step into a pastel wonderland filled with cute adventures, soft clouds, and endless friendship. Explore our gallery and join the fun!</p>
+                <div class="cta-group">
+                    <button class="btn-primary lg" onclick="document.getElementById('gallery').scrollIntoView({behavior: 'smooth'})">Explore Gallery</button>
+                    <button class="btn-secondary lg" id="learnMoreBtn">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="glass-card">
+                    <img src="assets/hellokitty.png" alt="Hello Kitty on a cloud" class="hero-img">
+                </div>
+                <div class="floating-bubble bubble-1"></div>
+                <div class="floating-bubble bubble-2"></div>
+                <div class="floating-bubble bubble-3"></div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <h2>Featured Moments</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item glass-panel">
+                    <div class="placeholder-img color-1"></div>
+                    <h3>Sweet Treats</h3>
+                    <p>Baking delicious cookies.</p>
+                </div>
+                <div class="gallery-item glass-panel">
+                    <div class="placeholder-img color-2"></div>
+                    <h3>Garden Party</h3>
+                    <p>Having fun with friends.</p>
+                </div>
+                <div class="gallery-item glass-panel">
+                    <div class="placeholder-img color-3"></div>
+                    <h3>Starry Night</h3>
+                    <p>Stargazing on a fluffy cloud.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Hello Kitty Fan Page. Crafted with <span class="heart">♥</span> and magic.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
